@@ -1,0 +1,10 @@
+build
+config/build.properties
+.redcar
+WEB-INF/appengine-generated
+WEB-INF/lib/application.jar
+*.log
+_*
+*.swp
+*.orig
+dubious_stats.txt
