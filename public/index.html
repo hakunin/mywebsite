@@ -3,6 +3,9 @@
 <head>
    <title>Michal Hantl</title>
    <meta charset="utf-8" />
+   <style>
+     a { color:gray; font-family:monospace }
+   </style>
  </head>
 <body align="center"><pre>
 +--------------------------------+
@@ -23,7 +26,7 @@
 </pre>
   <script>
       C="▒▓███";n=80;a=[];M=["\n"];r=0;O=document.body.children[0].innerHTML.split("\n");l=O[2].length;O=O.join("").split("");S=[];
-      setInterval('a[r]=r=Math.random()*n|0;for(i=n*n;i-->n;M[i]=M[i-n]||C[a[i%n]--]||" ")S[i]=(i%n>25&&(i%n<=l+25)&&(i/n|0)>=8&&O[((i/n|0)-8)*l+i%n-26])||M[i];document.body.innerHTML="<pre>"+S.slice(0,n*30).join("");',35)
+      setInterval('a[r]=r=Math.random()*n|0;for(i=n*n;i-->n;M[i]=M[i-n]||C[a[i%n]--]||" ")S[i]=(i%n>25&&(i%n<=l+25)&&(i/n|0)>=8&&O[((i/n|0)-8)*l+i%n-26])||M[i];document.body.children[0].innerHTML="<pre>"+S.slice(0,n*30).join("");',35)
   </script>
   <a href="/whoami.html">want to know moar?</a>
 </body>
