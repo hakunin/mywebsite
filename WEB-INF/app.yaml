@@ -2,33 +2,7 @@ application: hantl-cz
 version: ascii-2
 runtime: java
 public_root: /public
-sessions_enabled: true
-
 
 resource_files:
   - exclude: /build/**
 
-handlers:
-  - url: /*
-    servlet: controllers.HomeController
-    name: site
-    
-  - url: /*
-    filter: ext.ShowExceptionFilter
-    
-static_files:
- - include: /**/*.gif
-   expiration: 365d
- - include: /**/*.jpeg
-   expiration: 365d
- - include: /**/*.jpg
-   expiration: 365d
- - include: /**/*.png
-   expiration: 365d
- - include: /**/*.js
-   expiration: 2d
- - include: /*.js
-   expiration: 2d
- - include: /**/*.css
-   expiration: 365d
- - include: /**/*
